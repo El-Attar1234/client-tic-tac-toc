@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="localAi.MultiPlayerController">
+   <children>
+      <Label layoutX="94.0" layoutY="119.0" prefHeight="26.0" prefWidth="221.0" text="Player X" />
+      <Label layoutX="94.0" layoutY="202.0" prefHeight="26.0" prefWidth="221.0" text="Player O" />
+      <TextField fx:id="firstPlayerName" layoutX="315.0" layoutY="113.0" prefHeight="38.0" prefWidth="345.0" promptText="Enter First Player Name" text="Player 1" />
+      <TextField fx:id="secondPlayerName" layoutX="315.0" layoutY="196.0" prefHeight="38.0" prefWidth="345.0" promptText="Enter Second Player Name" text="Player 2" />
+      <CheckBox fx:id="checkBoxAllowRecord" layoutX="315.0" layoutY="274.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="187.0" text="Allow Record">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="start" layoutX="100.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleStartAction" prefHeight="74.0" prefWidth="221.0" text="Start">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="392.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleBackAction" prefHeight="74.0" prefWidth="221.0" text="Back">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
